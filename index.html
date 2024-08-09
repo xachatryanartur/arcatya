@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced E-commerce Store</title>
+  <meta name="description" content="Shop for the best products at Advanced E-commerce Store.">
+  <meta name="keywords" content="e-commerce, online store, products">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Advanced E-commerce Store</h1>
+    <button id="view-cart">View Cart (<span id="cart-count">0</span>)</button>
+  </header>
+  
+  <main>
+    <section id="product-list">
+      <!-- Products will be dynamically inserted here -->
+    </section>
+  </main>
+
+  <div id="cart" class="hidden">
+    <button id="close-cart">Close Cart</button>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">0.00</span> ֏</p>
+    <!-- Payment form -->
+    <div id="paypal-button-container"></div>
+    <div id="payment-message"></div>
+  </div>
+
+  <!-- Include PayPal SDK script with your actual client ID -->
+  <script src="https://www.paypal.com/sdk/js?client-id=ASIOXt5BQL8X98lrgNMHWHxXy7nJC-sMmQPWcsE2AZmrEPNTG8Gm1muG-8TbIXLCAR2F6rmZgEDBpg_A"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
